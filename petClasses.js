@@ -44,3 +44,6 @@ class cat extends PetBaseClass{
         this.imageRight = "";
     }
 }
+
+
+//add any other pets and modify attributes
