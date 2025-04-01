@@ -1,0 +1,92 @@
+/* CSS FOR DEMO PURPOSES ONLY */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #8ec5fc;
+    background-image: linear-gradient(64deg, #8ec5fc 0%, #e0c3fc 100%);
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  #app {
+    height: 100vh;
+  }
+  
+  #browser {
+    width: 92vw;
+    max-height: calc(100vh - 140px);
+    margin: 100px auto 0 auto;
+    aspect-ratio: 18/12;
+    background-color: rgb(233, 233, 233);
+    border-radius: 8px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+      rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    user-select: none;
+  }
+  
+  .bar {
+    background-color: rgb(255, 205, 238);
+    height: min(40px, 5vw);
+    border-bottom: solid 1px rgba(31, 21, 27, 0.1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 8px;
+    padding-left: 16px;
+  }
+  
+  .bts {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: inherit;
+  }
+  
+  .bts > div {
+    width: min(8px, 4vw);
+    height: min(8px, 4vw);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 600px) {
+    .bts > div {
+      width: min(12px, 4vw);
+      height: min(12px, 4vw);
+    }
+  }
+  
+  .bts > div:nth-of-type(1) {
+    background-color: rgb(252, 136, 136);
+  }
+  .bts > div:nth-of-type(2) {
+    background-color: rgb(248, 189, 99);
+  }
+  .bts > div:nth-of-type(3) {
+    background-color: rgb(106, 218, 124);
+  }
+  
+  #extension {
+    display: block;
+    width: 24px;
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    border-radius: 50%;
+    cursor: pointer;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    background-color: white;
+  }
+  
